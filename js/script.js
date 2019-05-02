@@ -28,8 +28,8 @@ function createTweet(input) {
         getQuote();
     } else {
         var tweet = tweetLink + encodeURIComponent(tweetText);
-        document.querySelector('.quote').innerText = quoteText;
-        document.querySelector('.author').innerText = "Author: " + quoteAuthor;
+        document.querySelector('.quote').innerText = ' " ' + quoteText + ' " ';
+        document.querySelector('.author').innerText = "Author :  " + quoteAuthor;
         document.querySelector('.tweet').setAttribute('href', tweet);
     }
 }
